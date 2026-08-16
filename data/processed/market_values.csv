@@ -1,0 +1,261 @@
+season,team,market_value
+2014,Chelsea,557250.0
+2014,Man United,505400.0
+2014,Man City,448250.0
+2014,Arsenal,414750.0
+2014,Liverpool,324850.0
+2014,Tottenham,304150.0
+2014,Southampton,210250.0
+2014,Everton,182850.0
+2014,Newcastle,140000.0
+2014,West Ham,135900.0
+2014,Swansea,130750.0
+2014,Hull,117100.0
+2014,Aston Villa,114250.0
+2014,QPR,112250.0
+2014,Stoke,110500.0
+2014,Crystal Palace,97250.0
+2014,West Brom,95950.0
+2014,Sunderland,91000.0
+2014,Leicester,66700.0
+2014,Burnley,52550.0
+2015,Chelsea,553500.0
+2015,Man City,499350.0
+2015,Arsenal,457850.0
+2015,Man United,439850.0
+2015,Liverpool,375250.0
+2015,Tottenham,371850.0
+2015,Everton,249850.0
+2015,Southampton,225500.0
+2015,West Ham,201330.0
+2015,Newcastle,198000.0
+2015,Leicester,161100.0
+2015,Stoke,147000.0
+2015,Swansea,145800.0
+2015,Watford,137000.0
+2015,Crystal Palace,135700.0
+2015,Aston Villa,117950.0
+2015,Norwich,116900.0
+2015,West Brom,113100.0
+2015,Sunderland,111250.0
+2015,Bournemouth,99900.0
+2016,Chelsea,686700.0
+2016,Man City,576500.0
+2016,Tottenham,543650.0
+2016,Arsenal,542000.0
+2016,Man United,531450.0
+2016,Liverpool,425650.0
+2016,Everton,311250.0
+2016,West Ham,273050.0
+2016,Southampton,263750.0
+2016,Crystal Palace,228430.0
+2016,Leicester,218650.0
+2016,Stoke,186000.0
+2016,Watford,175650.0
+2016,Swansea,157100.0
+2016,Hull,135850.0
+2016,Sunderland,132000.0
+2016,Bournemouth,131600.0
+2016,Middlesbrough,128800.00000000001
+2016,West Brom,123200.0
+2016,Burnley,107180.0
+2017,Man City,1010000.0
+2017,Chelsea,884250.0
+2017,Liverpool,857500.0
+2017,Man United,849500.0
+2017,Tottenham,829600.0
+2017,Arsenal,694000.0
+2017,Everton,381250.0
+2017,Leicester,304250.0
+2017,Southampton,297000.0
+2017,West Ham,268100.0
+2017,Crystal Palace,220730.0
+2017,Newcastle,208280.0
+2017,Watford,196000.0
+2017,Stoke,192450.0
+2017,Burnley,169300.0
+2017,West Brom,165950.0
+2017,Swansea,165490.0
+2017,Brighton,148200.0
+2017,Bournemouth,144500.0
+2017,Huddersfield,106050.0
+2018,Man City,1200000.0
+2018,Liverpool,1170000.0
+2018,Chelsea,1170000.0
+2018,Tottenham,898600.0
+2018,Man United,797600.0
+2018,Arsenal,659050.0
+2018,Everton,529100.0
+2018,Leicester,434100.0
+2018,West Ham,359000.0
+2018,Bournemouth,310000.0
+2018,Southampton,305400.0
+2018,Wolves,302900.0
+2018,Crystal Palace,289000.0
+2018,Fulham,254250.0
+2018,Newcastle,244650.0
+2018,Watford,239100.0
+2018,Burnley,197250.0
+2018,Brighton,194350.0
+2018,Huddersfield,137450.0
+2018,Cardiff,113000.0
+2019,Man City,1050000.0
+2019,Liverpool,1000000.0
+2019,Tottenham,806800.0
+2019,Chelsea,705850.0
+2019,Man United,670450.0
+2019,Arsenal,607650.0
+2019,Everton,420550.0
+2019,Leicester,411100.0
+2019,Wolves,320330.0
+2019,West Ham,303600.0
+2019,Bournemouth,272180.0
+2019,Newcastle,252480.0
+2019,Aston Villa,231700.0
+2019,Southampton,210750.0
+2019,Brighton,200780.0
+2019,Watford,199600.0
+2019,Crystal Palace,189330.0
+2019,Burnley,163880.0
+2019,Norwich,145330.0
+2019,Sheffield United,138600.0
+2020,Man City,1040000.0
+2020,Liverpool,969650.0
+2020,Chelsea,889200.0
+2020,Man United,770050.0
+2020,Tottenham,703500.0
+2020,Arsenal,619250.0
+2020,Everton,511200.0
+2020,Leicester,510600.0
+2020,Wolves,450300.0
+2020,Aston Villa,430700.0
+2020,West Ham,336400.0
+2020,Brighton,290400.0
+2020,Southampton,282800.0
+2020,Newcastle,255350.0
+2020,Fulham,239750.0
+2020,Leeds,238100.0
+2020,Crystal Palace,193850.0
+2020,Sheffield United,149850.0
+2020,West Brom,141150.0
+2020,Burnley,132300.0
+2021,Man City,1000000.0
+2021,Liverpool,918900.0
+2021,Chelsea,914500.0
+2021,Man United,769150.0
+2021,Tottenham,689350.0
+2021,Arsenal,613050.0
+2021,Leicester,526550.0
+2021,Aston Villa,487750.0
+2021,Everton,479050.0
+2021,Wolves,376950.0
+2021,West Ham,354900.0
+2021,Brighton,318000.0
+2021,Newcastle,313900.0
+2021,Leeds,299450.0
+2021,Southampton,274300.0
+2021,Brentford,273300.0
+2021,Crystal Palace,271050.0
+2021,Norwich,163200.0
+2021,Watford,156200.0
+2021,Burnley,137850.0
+2022,Man City,1150000.0
+2022,Arsenal,1000000.0
+2022,Chelsea,994950.0
+2022,Man United,847750.0
+2022,Liverpool,811850.0
+2022,Tottenham,649100.0
+2022,Newcastle,541600.0
+2022,Brighton,529800.0
+2022,Aston Villa,509550.0
+2022,Wolves,497650.0
+2022,Leicester,490700.0
+2022,West Ham,465600.0
+2022,Southampton,419950.0
+2022,Everton,413150.0
+2022,Nott'm Forest,376250.0
+2022,Brentford,371200.0
+2022,Leeds,345150.0
+2022,Crystal Palace,323050.0
+2022,Fulham,295100.0
+2022,Bournemouth,287200.0
+2023,Man City,1460000.0
+2023,Arsenal,1200000.0
+2023,Chelsea,1010000.0
+2023,Liverpool,955650.0
+2023,Tottenham,838500.0
+2023,Man United,808350.0
+2023,Aston Villa,709650.0
+2023,Newcastle,652250.0
+2023,Brighton,524400.0
+2023,Nott'm Forest,501350.0
+2023,West Ham,487500.0
+2023,Crystal Palace,446580.0
+2023,Wolves,442730.0
+2023,Brentford,428780.0
+2023,Bournemouth,401750.0
+2023,Everton,391750.0
+2023,Fulham,384350.0
+2023,Burnley,273480.0
+2023,Sheffield United,152350.0
+2023,Luton,140900.0
+2024,Man City,1360000.0
+2024,Chelsea,1190000.0
+2024,Arsenal,1160000.0
+2024,Liverpool,950950.0
+2024,Man United,825000.0
+2024,Tottenham,777300.0
+2024,Aston Villa,680550.0
+2024,Newcastle,677530.0
+2024,Brighton,667580.0
+2024,Crystal Palace,526850.0
+2024,Bournemouth,518600.0
+2024,Nott'm Forest,481300.0
+2024,Wolves,433050.0
+2024,Brentford,427850.0
+2024,West Ham,400700.0
+2024,Everton,363230.0
+2024,Fulham,362350.0
+2024,Southampton,310050.0
+2024,Ipswich,270100.0
+2024,Leicester,253350.0
+2025,Man City,1390000.0
+2025,Arsenal,1330000.0
+2025,Chelsea,1150000.0
+2025,Liverpool,980500.0
+2025,Tottenham,813400.0
+2025,Man United,774600.0
+2025,Crystal Palace,702500.0
+2025,Newcastle,697700.0
+2025,Bournemouth,680980.0
+2025,Nott'm Forest,638680.0
+2025,Brighton,625000.0
+2025,Aston Villa,613980.0
+2025,Brentford,503580.0
+2025,West Ham,469730.0
+2025,Everton,459250.0
+2025,Sunderland,446680.0
+2025,Wolves,389850.0
+2025,Fulham,376200.0
+2025,Leeds,374200.0
+2025,Burnley,236000.0
+2026,Man City,1470000.0
+2026,Arsenal,1410000.0
+2026,Chelsea,1360000.0
+2026,Liverpool,999500.0
+2026,Man United,874300.0
+2026,Tottenham,812500.0
+2026,Brighton,619500.0
+2026,Newcastle,566300.0
+2026,Bournemouth,565880.0
+2026,Brentford,565300.0
+2026,Nott'm Forest,560800.0
+2026,Crystal Palace,539400.0
+2026,Aston Villa,499300.0
+2026,Everton,471100.0
+2026,Leeds,412950.0
+2026,Sunderland,380580.0
+2026,Fulham,343800.0
+2026,Ipswich,277650.0
+2026,Coventry,265350.0
+2026,Hull,144300.0

@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+pandas
+numpy
+scikit-learn
+xgboost
+lightgbm
+joblib
+scipy
+pydantic
+requests
+python-dotenv
+python-dateutil
+understatapi
+beautifulsoup4
+jupyter
+matplotlib
