@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
+import pathlib
 
 from .schemas import MatchRequest
 from .predictor import predict, get_elo_map
@@ -9,6 +10,10 @@ from .cache import fetch_and_cache_standings
 async def lifespan(app: FastAPI):
     fetch_and_cache_standings()
     yield
+
+env = pathlib.Path(".env")
+if not env.exists():
+    raise FileNotFoundError(".env not found. Refer to README.md for instructions on setup")
 
 app = FastAPI(
     title="Golazo",

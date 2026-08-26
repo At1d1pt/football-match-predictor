@@ -6,7 +6,7 @@ from understatapi import UnderstatClient
 from .calculations import normalize_team_name
 
 LEAGUE = "EPL"
-SEASONS = [str(y) for y in range(2014, 2026)]
+SEASONS = [str(y) for y in range(2014, 2027)]
 
 OUTPUT_PATH = "data/raw/xG.csv"
 REQUEST_DELAY_SECONDS = 2

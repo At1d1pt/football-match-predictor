@@ -48,6 +48,6 @@ def evaluate_model(model, X_test, y_test, feature_columns):
 
     return predictions, probabilities
 
-def save_model(model, name="random_forest"):
+def save_model(model, name):
     joblib.dump(model, f"models/model_{name}.pkl")
     print("\nModel saved successfully!")
