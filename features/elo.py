@@ -3,7 +3,7 @@ import pandas as pd
 def load_matches(path="data/raw/compiled.csv"):
     df = pd.read_csv(path)
 
-    df["date"] = pd.to_datetime(df["date"])
+    df["date"] = pd.to_datetime(df["date"], dayfirst=True)
     df = df.sort_values("date").reset_index(drop=True)
 
     return df

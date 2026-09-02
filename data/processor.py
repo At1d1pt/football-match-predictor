@@ -16,8 +16,11 @@ def process_data():
     for file in files:
         df = pd.read_csv(file)
         filename = os.path.basename(file)
-        season = filename.split("_")[1].split(".")[0]
-        df["season"] = season
+        raw_season = filename.split("_")[1].split(".")[0]
+        start_str = raw_season.split("-")[0]
+        century = 1900 if int(start_str) > 90 else 2000
+        season_year = century + int(start_str)
+        df["season"] = season_year
         columns = [
             "season",
             "Date",
@@ -59,8 +62,9 @@ def process_data():
 
     final_df = pd.concat(all_dfs, ignore_index=True)
 
-    final_df["date"] = pd.to_datetime(final_df["date"], dayfirst=True)
+    final_df["date"] = pd.to_datetime(final_df["date"], dayfirst=True, format="mixed")
     final_df.sort_values("date", inplace=True)
+    final_df["date"] = final_df["date"].dt.strftime("%Y-%m-%d")
 
     final_df.to_csv("data/raw/compiled.csv", index=False)
 

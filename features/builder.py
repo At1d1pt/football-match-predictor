@@ -15,9 +15,12 @@ def build_features():
     df = pd.read_csv("data/raw/compiled.csv")
     elo_df = pd.read_csv("data/processed/elo_history.csv")
     market_df = pd.read_csv("data/processed/market_values.csv")
-    xg_df = pd.read_csv("data/raw/xg.csv")
+    xg_df = pd.read_csv("data/raw/xG.csv")
     
-    df = df[df["season"] >= "2014"]
+    df = df[df["season"] >= 2014]
+    df["date"] = pd.to_datetime(df["date"], dayfirst=True).dt.strftime("%d-%m-%Y")
+    elo_df["date"] = pd.to_datetime(elo_df["date"], dayfirst=True).dt.strftime("%d-%m-%Y")
+    xg_df["date"] = pd.to_datetime(xg_df["date"], dayfirst=True).dt.strftime("%d-%m-%Y")
 
     df = df.merge(
         elo_df,

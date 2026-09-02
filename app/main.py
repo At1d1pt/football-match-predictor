@@ -4,7 +4,7 @@ import pathlib
 
 from .schemas import MatchRequest
 from .predictor import predict, get_elo_map
-from .cache import fetch_and_cache_standings
+from .cache import fetch_and_cache_standings, get_standings
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -27,6 +27,10 @@ def home():
     return {
         "message": "running"
     }
+
+@app.get("/stadings")
+def get_league_standings():
+    return get_standings()
 
 @app.post("/predict")
 def predict_match(request: MatchRequest):

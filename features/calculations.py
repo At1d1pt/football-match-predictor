@@ -3,11 +3,12 @@ import pandas as pd
 from datetime import datetime
 
 def season_from_date(date):
+    #print(date)
     if isinstance(date, str):
         try:
             date = datetime.strptime(date, "%Y-%m-%d")
         except ValueError:
-            date = datetime.strptime(date, "%d/%m/%Y")
+            date = datetime.strptime(date, "%d-%m-%Y")
 
     if date.month >= 8:
         return date.year
