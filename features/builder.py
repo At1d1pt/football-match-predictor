@@ -1,6 +1,9 @@
 import os
 import pandas as pd
 import time
+import warnings
+
+warnings.filterwarnings("ignore")
 
 from dotenv import load_dotenv
 
@@ -42,7 +45,9 @@ def build_features():
     league_table = initialize_table()
     current_season = None
 
-    for _, match in df.iterrows():
+    for match_no, (_, match) in enumerate(df.iterrows(), start=1):
+        print(f"{match_no} | {match['date']} | {match['home_team']} vs {match['away_team']}")
+
         if match["season"] != current_season:
             current_season = match["season"]
             league_table = initialize_table()

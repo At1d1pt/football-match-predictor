@@ -21,3 +21,5 @@ ENV/
 .idea/
 .DS_Store
 Thumbs.db
+
+models/*_metrics.png

@@ -61,6 +61,7 @@ def process_data():
         all_dfs.append(df)
 
     final_df = pd.concat(all_dfs, ignore_index=True)
+    final_df.dropna(subset=["date"], inplace=True)
 
     final_df["date"] = pd.to_datetime(final_df["date"], dayfirst=True, format="mixed")
     final_df.sort_values("date", inplace=True)

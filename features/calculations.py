@@ -3,12 +3,15 @@ import pandas as pd
 from datetime import datetime
 
 def season_from_date(date):
-    #print(date)
+    if date is None or (isinstance(date, float) and pd.isna(date)):
+        return None
     if isinstance(date, str):
         try:
             date = datetime.strptime(date, "%Y-%m-%d")
         except ValueError:
             date = datetime.strptime(date, "%d-%m-%Y")
+    elif isinstance(date, pd.Timestamp):
+        date = date.to_pydatetime()
 
     if date.month >= 8:
         return date.year
@@ -126,8 +129,8 @@ def calculate_rest_days(team, df, date):
     if last_match.empty:
         return 7  # 7 days of rest if no previous match is found
 
-    last_match_date = pd.to_datetime(last_match.iloc[0]["date"])
-    current_date = pd.to_datetime(date)
+    last_match_date = pd.to_datetime(last_match.iloc[0]["date"], dayfirst=True)
+    current_date = pd.to_datetime(date, dayfirst=True)
     rest_days = (current_date - last_match_date).days
 
     return rest_days
@@ -277,7 +280,7 @@ def average_xga(team, df, date):
 def average_home_xg(team, df, date):
     home_matches = df[
         (df["home_team"] == team) &
-        (pd.to_datetime(df["date"]) < pd.to_datetime(date))
+        (pd.to_datetime(df["date"], dayfirst=True) < pd.to_datetime(date, dayfirst=True))
     ].sort_values("date", ascending=False)
 
     total_xg = 0
@@ -295,7 +298,7 @@ def average_home_xg(team, df, date):
 def average_away_xg(team, df, date):
     away_matches = df[
         (df["away_team"] == team) &
-        (pd.to_datetime(df["date"]) < pd.to_datetime(date))
+        (pd.to_datetime(df["date"], dayfirst=True) < pd.to_datetime(date, dayfirst=True))
     ].sort_values("date", ascending=False)
 
     total_xg = 0
@@ -314,7 +317,7 @@ def average_away_xg(team, df, date):
 def average_home_xga(team, df, date):
     home_matches = df[
         (df["home_team"] == team) &
-        (pd.to_datetime(df["date"]) < pd.to_datetime(date))
+        (pd.to_datetime(df["date"], dayfirst=True) < pd.to_datetime(date, dayfirst=True))
     ].sort_values("date", ascending=False)
 
     total_xga = 0
@@ -332,7 +335,7 @@ def average_home_xga(team, df, date):
 def average_away_xga(team, df, date):
     away_matches = df[
         (df["away_team"] == team) &
-        (pd.to_datetime(df["date"]) < pd.to_datetime(date))
+        (pd.to_datetime(df["date"], dayfirst=True) < pd.to_datetime(date, dayfirst=True))
     ].sort_values("date", ascending=False)
 
     total_xga = 0
